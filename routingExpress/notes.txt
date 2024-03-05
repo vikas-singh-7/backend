@@ -1,0 +1,32 @@
+first what is node 
+it is  a js runtime environment
+why we need to learn node 
+bexause we need to make server side applciation 
+what do you mean by server side applicatiobs 
+well that runs on server , what , how it run on server
+because server has many things store in them , our node tell server that at which port our fronedn wants  to connect or at what endpoint 
+so we need node to tell server that what to do when our fronetend demand some thing 
+
+
+++++++++++++++++++++++++++  node express        +++++++++++++++++++++++++++++
+
+
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript code on the server-side, outside of a web browser. In simpler terms, Node.js enables you to use JavaScript to build backend applications.
+
+Why do we need to learn Node.js?
+Node.js is valuable because it allows developers to use JavaScript for both frontend and backend development. This unification simplifies the development process, as developers can use the same language and ecosystem on both sides of their applications. Additionally, Node.js is known for its non-blocking, event-driven architecture, making it highly scalable and efficient for handling I/O-heavy operations, such as serving web pages, handling database operations, and managing network communication.
+
+What are server-side applications?
+Server-side applications are programs that run on a server rather than on an individual's computer or device. They respond to requests from client-side applications, such as web browsers or mobile apps, by processing data, performing computations, and interacting with databases. In the context of web development, server-side applications handle tasks like serving web pages, processing form submissions, and managing user authentication.
+
+Why do we need to make a server?
+Servers are essential for hosting and serving web applications to users across the internet. When you create a server using Node.js, you're essentially setting up a system that listens for incoming requests from clients (such as web browsers) and responds to those requests with appropriate data or actions. This enables you to build dynamic web applications that interact with databases, perform computations, and provide personalized experiences to users.
+
+What is Express.js?
+Express.js is a web application framework for Node.js. It provides a robust set of features for building web applications and APIs, including routing, middleware support, template engines, and error handling. Express.js simplifies the process of creating server-side applications by providing a structured and efficient way to handle HTTP requests and responses.
+
+In summary, Node.js and Express.js are powerful tools for building server-side applications and APIs using JavaScript. They enable developers to leverage their existing frontend JavaScript skills to create full-stack applications and scale them efficiently to handle a large number of concurrent users and requests.
+
+
+
+

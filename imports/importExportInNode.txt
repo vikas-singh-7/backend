@@ -1,0 +1,13 @@
+so we know that in js what we do to import and export the thingf rom one js file to anotehr js 
+
+we do export{variable,variable2} 
+
+and to import we do import {variable,variable2} from "./script2.js"
+
+but it wont work in node 
+
+in node when we want to import something from a file we use require('pathofFile') function 
+
+to export what we do is , we use module.exports=variables
+
+module object ki export property use krke usme assign krdo values jo apko export krni hai :p 
