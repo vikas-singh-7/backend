@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simplay Layout</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+  background-color: lightgray;
+  padding: 0 1.5rem;
+  box-shadow: 0px 0px 1rem gray;
+  filter: drop-shadow(0 0 10px #000);
+}
+
+.nav h2 {
+  font-size: 2rem;
+  letter-spacing: 1.1px;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px red;
+  font-variant: small-caps;
+  color:lightseagreen;
+}
+
+.nav-part2 {
+  display: flex;
+  column-gap: 3vw;
+}
+
+.nav h4 {
+  font-size: 1.3rem;
+  letter-spacing: 1.3px;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px red;
+  font-variant: small-caps;
+  color:lightseagreen;
+  cursor:pointer;
+}
+
+.nav h4:hover {
+  font-weight: 900;
+  text-shadow: 1px 1px 1px #000;
+  text-decoration: underline;
+  font-variant: small-caps;
+  color:lightseagreen;
+}
+
+.nav i {
+  display: none;
+}
+
+/* Main content space */
+
+.content {
+  height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  width: 55%;
+  height: 100%;
+  /* background-color: aqua; */
+  padding: 4vw 7vw;
+}
+
+.left h1 {
+  text-transform: capitalize;
+  font-size: 2.2vw;
+  padding: 2vw 0;
+  letter-spacing: 3px;
+}
+.left span {
+  color: lightseagreen;
+}
+
+.left p {
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1.9vw;
+  color: #000;
+  width: 80%;
+  text-align: start;
+  margin-bottom: 2.2vw;
+  font-size:1.2rem;
+}
+
+.left button {
+  font-size: 1.1vw;
+  font-weight: 600;
+  padding: 0.6vw 1.4vw;
+  background-color: lightseagreen;
+  color: #fff;
+  text-shadow: 1px 1px 1rem red;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 1rem gray;
+  filter: drop-shadow(0 0 10px #000);
+}
+
+.right {
+  width: 45%;
+  height: 100%;
+}
+.right img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .nav h2 {
+    font-size: 1.8rem;
+  }
+
+  .nav h4 {
+    font-size: 1.1rem;
+    display: none;
+  }
+
+  .nav i {
+    display: initial;
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+
+  /* Main Content */
+
+  .content {
+    height: calc(100vh - 70px);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+    height: 50%;
+    /* background-color: aqua; */
+    padding: 3vw 3vw;
+  }
+
+  .left h1 {
+    text-transform: capitalize;
+    font-size: 3.3vw;
+    padding: 2vw 0;
+    letter-spacing: 3px;
+  }
+
+  .left p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 6vw;
+    color: #666;
+    width: 80%;
+    text-align: start;
+    margin-bottom: 2.5vw;
+  }
+
+  .left button {
+    font-size: 3.5vw;
+    font-weight: 600;
+    padding: 0.6vw 1.4vw;
+    background-color: lightseagreen;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px 2px lightseagreen;
+    margin-top: 1rem;
+  }
+
+  .right {
+    width: 100%;
+    height: 100%;
+  }
+  .right img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <h2>Logo</h2>
+                <div class="nav-part2">
+                    <h4>Store</h4>
+                    <h4>Courses</h4>
+                    <h4>Career</h4>
+                    <h4>Blog</h4>
+                    <h4>Account</h4>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="content">
+                <div class="left">
+                    <h1>Start to learn CSS from this Site in <span>fastest</span> way. </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, ducimus aspernatur sequi vitae adipisci atque quidem voluptate praesentium dicta veritatis!</p>
+                    <button>Explore now</button>
+                </div>
+                <div class="right">
+                    <img src="https://en.pimg.jp/099/391/239/1/99391239.jpg" alt="image" title="image Copyright: alexdndz">
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>

@@ -14,6 +14,7 @@
 
 const{backend,developer, frnd}=require('./script2.js')
 
+
 console.log(backend, "by" , developer , "and she is " , frnd)
 
 

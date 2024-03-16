@@ -1,0 +1,35 @@
+why we need ejs , what the duck is ejs .
+well ejs (embeded javascript)  is a template engine ,,,
+wow wow ow what the horse is template engine is ?
+well template engine is something which generate a special kind of html which can dynamivally cahnges ,
+what does it means ?
+well we know html is a static langage , it will print the samw stuff which is written in it , and for all the users who ever ill open this html they will get the same content
+now template engines aloows us to generte a html (speecial HTML )  which can show things df on df users 
+
+and ejs is one of the template engine it takes a html and convert it into a ejs so that html will show data dynamically , 
+
+
+steps ::
+
+first install ejs npm i ejs
+
+
+configure it ::   configure the template engine 
+
+app.set("view engine","ejs")   // use this code 
+
+app.set("view engine","ejs")
+
+
+
+make a views folder 
+
+views > make a ejs file remember not a html file , ejs file 
+why , becasue we have to change the content of html dynamically thast why ejs file :P
+
+
+now how to render the ejs file on a routeb ? recall   well using res.render()
+
+well by just doing app.get('/',(req,res)=>{
+    res.redner("filename")   dont use any extension here 
+})
