@@ -1,3 +1,4 @@
+const { render } = require("ejs");
 const express = require("express");
 const port = 3000;
 
@@ -8,8 +9,12 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/", (req, res) => {
-  res.send("hello world :)");
-});
+app.set("view engine", "ejs");
 
+app.get("/", (req, res) => {
+  res.render("about",{name:"vikas"});
+});
 app.listen(port);
+// app.get("/", (req, res) => {
+//   res.send("hello world :)");
+// });
